@@ -1,0 +1,90 @@
+:root {
+    --main-tone: #4da53f;
+    --main-tone-darker: #19780b;
+    --text-grey: #5e5e5e;
+    --text-lighter-grey: #bbb;
+}
+
+body {
+    font-size: 14px;
+    font-family: "Microsoft YaHei", sans-serif;
+}
+
+nav a {
+    color: var(--text-grey) !important;
+}
+
+footer a {
+    color: var(--text-lighter-grey);
+}
+
+nav a.active {
+    color: var(--main-tone) !important;
+}
+
+nav a:hover,
+footer a:hover {
+    color: var(--main-tone) !important;
+    text-decoration: none;
+}
+
+a {
+    color: var(--main-tone);
+}
+
+section {
+    margin-bottom: 50px;
+}
+
+h4 {
+    position: relative;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+h4 > .sub {
+    color: var(--text-lighter-grey);
+    font-size: 13px;
+    font-family: "Times New Roman", serif;
+}
+
+h4::before {
+    content: "";
+    position: absolute;
+    left: -12px;
+    width: 8px;
+    top: 2px;
+    height: 24px;
+    background-image: linear-gradient(
+        to bottom,
+        var(--main-tone),
+        var(--main-tone) 50%,
+        var(--main-tone-darker) 50%
+    );
+}
+
+p {
+    color: var(--text-grey);
+    font-size: 13px;
+    line-height: 26px;
+    text-indent: 2em;
+}
+
+footer {
+    background-color: #333641;
+    color: var(--text-lighter-grey);
+    padding: 30px 0;
+}
+
+footer h6 {
+    margin-bottom: 20px;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+footer li {
+    margin-bottom: 5px;
+}
